@@ -1,0 +1,16 @@
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\bin\Debug\net8.0-windows\sayitahminoyunu.exe
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\bin\Debug\net8.0-windows\sayitahminoyunu.deps.json
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\bin\Debug\net8.0-windows\sayitahminoyunu.runtimeconfig.json
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\bin\Debug\net8.0-windows\sayitahminoyunu.dll
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\bin\Debug\net8.0-windows\sayitahminoyunu.pdb
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.Form1.resources
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.csproj.GenerateResource.cache
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.AssemblyInfoInputs.cache
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.AssemblyInfo.cs
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.csproj.CoreCompileInputs.cache
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.dll
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\refint\sayitahminoyunu.dll
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.pdb
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\sayitahminoyunu.genruntimeconfig.cache
+C:\Users\orcun\source\repos\sayitahminoyunu\sayitahminoyunu\obj\Debug\net8.0-windows\ref\sayitahminoyunu.dll

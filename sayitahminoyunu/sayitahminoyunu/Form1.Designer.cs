@@ -33,7 +33,6 @@
             btnTahmin = new Button();
             btnYeniOyun = new Button();
             flpGecmis = new FlowLayoutPanel();
-            satirPanel = new FlowLayoutPanel();
             lblHak = new Label();
             SuspendLayout();
             // 
@@ -82,25 +81,17 @@
             flpGecmis.AutoScroll = true;
             flpGecmis.AutoSize = true;
             flpGecmis.FlowDirection = FlowDirection.TopDown;
-            flpGecmis.Location = new Point(186, 153);
+            flpGecmis.Location = new Point(187, 125);
             flpGecmis.Name = "flpGecmis";
             flpGecmis.Size = new Size(208, 373);
             flpGecmis.TabIndex = 4;
             flpGecmis.WrapContents = false;
             // 
-            // satirPanel
-            // 
-            satirPanel.Location = new Point(700, 604);
-            satirPanel.Name = "satirPanel";
-            satirPanel.Size = new Size(305, 176);
-            satirPanel.TabIndex = 5;
-            satirPanel.WrapContents = false;
-            // 
             // lblHak
             // 
             lblHak.AutoSize = true;
             lblHak.Font = new Font("Segoe UI", 15F);
-            lblHak.Location = new Point(225, 122);
+            lblHak.Location = new Point(0, 62);
             lblHak.Name = "lblHak";
             lblHak.Size = new Size(108, 28);
             lblHak.TabIndex = 6;
@@ -111,9 +102,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveBorder;
-            ClientSize = new Size(612, 720);
+            ClientSize = new Size(614, 801);
             Controls.Add(lblHak);
-            Controls.Add(satirPanel);
             Controls.Add(flpGecmis);
             Controls.Add(btnYeniOyun);
             Controls.Add(btnTahmin);
@@ -133,7 +123,6 @@
         private Button btnTahmin;
         private Button btnYeniOyun;
         private FlowLayoutPanel flpGecmis;
-        private FlowLayoutPanel satirPanel;
         private Label lblHak;
     }
 }

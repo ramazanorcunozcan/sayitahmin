@@ -1,10 +1,18 @@
-﻿namespace sayitahminoyunu
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace sayitahminoyunu
 {
     public partial class Form1 : Form
     {
-        int tutulansayi; //rastgele oluşturulan sayı
-        string tutulanstr; //sayıyı string olarak saklama
+        int tutulansayi;
+        string tutulanstr;
         int kalanHak;
+
+        int toplamPuan = 0;
+        Label lblPuan;
+
         public Form1()
         {
             InitializeComponent();
@@ -12,7 +20,71 @@
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            SanalKlavyeOlustur();
+            PuanLabeli(); // puan göstergesi
             yenioyunbaslat();
+        }
+
+        // puan gösterme
+        private void PuanLabeli()
+        {
+            lblPuan = new Label();
+            lblPuan.AutoSize = true;
+            lblPuan.Location = new Point(00, 89);
+            lblPuan.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
+            lblPuan.ForeColor = Color.DarkGreen;
+            lblPuan.Text = "Toplam Puan: 0";
+            this.Controls.Add(lblPuan);
+        }
+        // ----------------------------------------
+
+        private void SanalKlavyeOlustur()
+        {
+            FlowLayoutPanel pnlKlavye = new FlowLayoutPanel();
+            pnlKlavye.Name = "pnlKlavye";
+            pnlKlavye.Size = new Size(160, 220);
+            pnlKlavye.Location = new Point(txtTahmin.Location.X + txtTahmin.Width + 20, txtTahmin.Location.Y);
+            pnlKlavye.FlowDirection = FlowDirection.LeftToRight;
+
+            for (int i = 1; i <= 9; i++)
+            {
+                pnlKlavye.Controls.Add(RakamButonOlustur(i.ToString()));
+            }
+
+            Button btnSil = new Button();
+            btnSil.Text = "←";
+            btnSil.Size = new Size(45, 45);
+            btnSil.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            btnSil.Click += (s, e) => {
+                if (txtTahmin.Text.Length > 0)
+                    txtTahmin.Text = txtTahmin.Text.Substring(0, txtTahmin.Text.Length - 1);
+            };
+            pnlKlavye.Controls.Add(btnSil);
+
+            pnlKlavye.Controls.Add(RakamButonOlustur("0"));
+
+            Button btnOnay = new Button();
+            btnOnay.Text = "✓";
+            btnOnay.Size = new Size(45, 45);
+            btnOnay.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            btnOnay.BackColor = Color.LightGreen;
+            btnOnay.Click += (s, e) => btnTahmin.PerformClick();
+            pnlKlavye.Controls.Add(btnOnay);
+
+            this.Controls.Add(pnlKlavye);
+        }
+
+        private Button RakamButonOlustur(string rakam)
+        {
+            Button btn = new Button();
+            btn.Text = rakam;
+            btn.Size = new Size(45, 45);
+            btn.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            btn.Click += (s, e) => {
+                if (txtTahmin.Text.Length < 3)
+                    txtTahmin.Text += rakam;
+            };
+            return btn;
         }
 
         private void yenioyunbaslat()
@@ -29,6 +101,12 @@
 
             txtTahmin.Clear();
             txtTahmin.Focus();
+            txtTahmin.Enabled = true;
+            btnTahmin.Enabled = true;
+
+            // klavyeyi tekrar aktif et
+            Control[] klavye = this.Controls.Find("pnlKlavye", true);
+            if (klavye.Length > 0) klavye[0].Enabled = true;
         }
 
         private void btnYeniOyun_Click(object sender, EventArgs e)
@@ -49,7 +127,6 @@
             kalanHak--;
             lblHak.Text = $"Kalan Hak: {kalanHak}";
 
-            // Her tahmin için küçük bir panel oluşturma
             FlowLayoutPanel tahminSatiri = new FlowLayoutPanel();
             tahminSatiri.FlowDirection = FlowDirection.LeftToRight;
             tahminSatiri.WrapContents = false;
@@ -57,7 +134,6 @@
             tahminSatiri.Width = 200;
             tahminSatiri.Margin = new Padding(0, 5, 0, 5);
 
-            // Renkli kutucuklar oluşturma kısmı
             for (int i = 0; i < 3; i++)
             {
                 Label lbl = new Label();
@@ -70,21 +146,20 @@
 
                 if (tahminStr[i] == tutulanstr[i])
                 {
-                    lbl.BackColor = Color.LightGreen; // doğru yerde
+                    lbl.BackColor = Color.LightGreen;
                 }
                 else if (tutulanstr.Contains(tahminStr[i]))
                 {
-                    lbl.BackColor = Color.Gold; // yanlış yerde
+                    lbl.BackColor = Color.Gold;
                 }
                 else
                 {
-                    lbl.BackColor = Color.LightGray; // yok
+                    lbl.BackColor = Color.Red;
                 }
 
                 tahminSatiri.Controls.Add(lbl);
             }
 
-            // Tahmin satırının başına tahmin numarası ekleme
             Label lblTahminNo = new Label();
             lblTahminNo.Text = $"{flpGecmis.Controls.Count + 1}.";
             lblTahminNo.Font = new Font("Segoe UI", 12, FontStyle.Regular);
@@ -92,37 +167,45 @@
             lblTahminNo.TextAlign = ContentAlignment.MiddleRight;
             lblTahminNo.Margin = new Padding(5, 10, 5, 0);
 
-            // Her satırı bir alt panelde birleştirme
             FlowLayoutPanel satirPanel = new FlowLayoutPanel();
             satirPanel.Controls.Add(lblTahminNo);
             satirPanel.Controls.Add(tahminSatiri);
 
-            // Ana panele ekleme
             flpGecmis.Controls.Add(satirPanel);
 
-            // Eğer doğruysa tebrik mesajı gösterme
+            // otomatik kaydırma
+            flpGecmis.ScrollControlIntoView(satirPanel);
+
             if (tahminStr == tutulanstr)
             {
-                MessageBox.Show($" Tebrikler! Sayı {tutulansayi} idi!");
+                // puan hesap
+                int kazanilanPuan = kalanHak * 100;
+                toplamPuan += kazanilanPuan;
+                lblPuan.Text = $"Toplam Puan: {toplamPuan}";
+
+                MessageBox.Show($"Tebrikler! Sayı {tutulansayi} idi!\nBu turdan {kazanilanPuan} puan kazandın.\nToplam Puanın: {toplamPuan}");
                 OyunBitti();
                 return;
             }
-            if (kalanHak <= 0) 
+
+            if (kalanHak <= 0)
             {
-                MessageBox.Show($"Hakkın Bitti! Sayı {tutulansayi}");
+                MessageBox.Show($"Hakkın Bitti! Sayı {tutulansayi} idi.\nMaalesef puan kazanamadın.");
                 OyunBitti();
                 return;
             }
 
             txtTahmin.Clear();
             txtTahmin.Focus();
-
         }
 
         private void OyunBitti()
         {
             txtTahmin.Enabled = false;
             btnTahmin.Enabled = false;
+
+            Control[] klavye = this.Controls.Find("pnlKlavye", true);
+            if (klavye.Length > 0) klavye[0].Enabled = false;
         }
 
         private void txtTahmin_KeyDown(object sender, KeyEventArgs e)
@@ -132,21 +215,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

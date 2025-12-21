@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|c:\\users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|c:\\users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CF50EAE-35B5-4D04-B304-458C64D26CEC}|sayitahminoyunu\\sayitahminoyunu.csproj|solutionrelative:sayitahminoyunu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form1.cs",
               "RelativeDocumentMoniker": "sayitahminoyunu\\Form1.cs",
               "ToolTip": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form1.cs",
               "RelativeToolTip": "sayitahminoyunu\\Form1.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAcwDkAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T11:06:02.501Z",
               "IsPinned": true,
@@ -40,15 +52,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form1.cs",
               "RelativeDocumentMoniker": "sayitahminoyunu\\Form1.cs",
               "ToolTip": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form1.cs [Design]",
               "RelativeToolTip": "sayitahminoyunu\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T11:04:00.55Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-28T11:04:00.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form4.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form4.cs",
+              "RelativeDocumentMoniker": "sayitahminoyunu\\Form4.cs",
+              "ToolTip": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form4.cs [Design]",
+              "RelativeToolTip": "sayitahminoyunu\\Form4.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T08:25:28.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form3.cs",
+              "RelativeDocumentMoniker": "sayitahminoyunu\\Form3.cs",
+              "ToolTip": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form3.cs [Design]",
+              "RelativeToolTip": "sayitahminoyunu\\Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T08:25:22.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form2.cs",
+              "RelativeDocumentMoniker": "sayitahminoyunu\\Form2.cs",
+              "ToolTip": "C:\\Users\\orcun\\source\\repos\\sayitahminoyunu\\sayitahminoyunu\\Form2.cs [Design]",
+              "RelativeToolTip": "sayitahminoyunu\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T08:05:34.922Z"
             }
           ]
         }
